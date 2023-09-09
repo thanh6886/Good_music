@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music player</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+crossorigin="anonymous"
+ referrerpolicy="no-referrer" />
+
+
+ <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+ <link rel="stylesheet" href="main.css">
+
+</head>
+
+
+
+<body>
+<div class="player">
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <!-- Header -->
+    <header>
+      <div id="wave">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+    </div> 
+      <h4>Now playing:</h4>
+      <h2>String 57th & 9th</h2>
+    </header>
+
+    <!-- CD -->
+    <div class="cd">
+      <div class="cd-thumb">
+      </div>
+    </div>
+
+    <!-- Control -->
+    <div class="control">
+      <div class="btn btn-repeat">
+        <i class="fas fa-redo fa-2x"></i>
+      </div>
+      <div class="btn btn-prev">
+        <i class="fas fa-step-backward fa-2x"></i>
+      </div>
+
+      <div class="btn btn-toggle-play"> 
+        <i class="fa fa-play-circle fa-3x"></i>'         
+      </div>
+
+      <div class="btn btn-next">
+        <i class="fas fa-step-forward fa-2x"></i>
+      </div>
+      
+      <div class="btn btn-random">
+        <i class="fas fa-random fa-2x"></i>
+      </div>
+    </div>
+
+
+    <div class="slider_container">
+      <span class="start_time" style="margin-right: 3px">00:00</span>
+        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      <span class="end_time" style="margin-left: 3px">00:00</span>
+      </div>
+
+
+      <div class="slider_container">
+        <i class="fa fa-volume-down" style="margin-right: 5px "></i>
+         <input type="range" min="0" max="1"  value="0.5" step="0.01"  class="_volume">
+         <i class="fa fa-volume-up" style="margin-left: 5px"></i> 
+      </div>
+      <p class="slider_container" style="font-size: medium; color: black"  >Volume: <span id="currentVolume">50</span></p>
+
+
+
+  <audio id="audio" src=""></audio>
+  </div>
+     
+
+  <!-- Playlist -->
+  <div class="playlist">
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+<!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
+</body>
+</html>

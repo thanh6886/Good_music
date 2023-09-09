@@ -1,0 +1,76 @@
+{
+  
+  "songs": [
+    {
+      "name":    "Về Quê",
+      "singer":  "DJ TRIỆU MUZIK MIX",
+      "path":    "https://archive.org/download/ve-que_202308/V%E1%BB%80%20QU%C3%8A.mp3",
+      "image":   "https://toigingiuvedep.vn/wp-content/uploads/2022/11/hinh-anh-gai-xinh-de-thuong-deo-kinh-400x600.jpg"
+    },
+
+    {
+      "name":    "Con đường xưa em đi",
+      "singer":  "DJ TRIỆU MUZIK MIX",
+      "path":    "https://archive.org/download/nhac_20230827_202308/nhac.mp3",
+      "image":   "https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-gai-xinh-de-thuong-nhat-1-600x600.jpg"
+    },
+  {
+    "name":   "Ko nhớ tên",
+    "singer":  "DJ TRIỆU MUZIK MIX",
+    "path":    "https://archive.org/download/2_20230827_20230827_0848/2.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2022/11/hinh-anh-gai-xinh-de-thuong-dang-yeu.jpg"
+  },
+  {
+    "name":   "em là cô giao vùng cao",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/em-la-co-gia-o-vu-ng-cao/EM%20L%C3%80%20C%C3%94%20GI%C3%81O%20V%C3%99NG%20CAO.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-gai-xinh-de-thuong-toc-ngan.jpg"
+  },
+  {
+    "name":   "Mấy nhịp cầu tre",
+    "singer": "DJ TRIỆU MUZIK",
+    "path":   "https://archive.org/download/ma-y-nhi-p-ca-u-tre/M%E1%BA%A4Y%20NH%E1%BB%8AP%20C%E1%BA%A6U%20TRE.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2022/11/hinh-anh-gai-xinh-de-thuong-ngoi-tren-bai-bien.jpg"
+  },
+  {
+    "name":   "Đắp mộ cuộc tình",
+    "singer": "PHÁP SƯ PROD",
+    "path":   "https://archive.org/download/da-p-mo-cuo-c-ti-nh/%C4%90%E1%BA%AEP%20M%E1%BB%98%20CU%E1%BB%98C%20T%C3%8CNH.mp3",
+    "image":   "https://bloghomestay.vn/wp-content/uploads/2023/01/top-99-anh-gai-cute-de-thuong-dang-yeu-gay-thuong-nho_27.jpg"
+   
+  },
+  {
+    "name":   "Gửi Người Em Hà Tĩnh ",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/3_20230827_202308/3.mp3",
+    "image":  "https://bloghomestay.vn/wp-content/uploads/2023/01/top-99-anh-gai-cute-de-thuong-dang-yeu-gay-thuong-nho_3.jpg"
+  },
+  {
+    "name":   "Lỡ hẹn sông lam",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/lo-hen-voi-dong-lam/L%E1%BB%A1%20H%E1%BA%B9n%20V%E1%BB%9Bi%20D%C3%B2ng%20Lam.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2021/06/anh-gai-xinh-de-thuong-dang-yeu-439x600.jpg"
+  }
+  ,
+  {
+    "name":   "chuyện tình hoa sim",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/chuyen-hoa-sim_202308/Chuy%E1%BB%87n%20Hoa%20Sim.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-girl-xinh-toc-ngan-de-thuong-600x600.jpg"
+  }
+  ,
+  {
+    "name":   "NGÀY KHÔNG EM REMIX",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/nga-y-kho-ng-em-remix/NG%C3%80Y%20KH%C3%94NG%20EM%20REMIX.mp3",
+    "image":  "https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-gai-xinh-de-thuong-dep-nhat.jpg"
+  }
+  ,
+  {
+    "name":   "dáng em",
+    "singer": "DJ TRIỆU MUZIK MIX",
+    "path":   "https://archive.org/download/dang-em/D%C3%A1ng%20Em.mp3",
+    "image":  "https://bloghomestay.vn/wp-content/uploads/2023/01/top-99-anh-gai-cute-de-thuong-dang-yeu-gay-thuong-nho_19.jpg"
+  }
+]
+}
