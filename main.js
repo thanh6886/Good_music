@@ -1,4 +1,4 @@
-const postAPI = 'http://localhost:3000/songs'
+const postAPI = 'https://thanh6886.github.io/usersAPI/usersAPI.json'
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
@@ -189,7 +189,8 @@ document.onscroll = function(){                                                 
 
 function appRun(){                  // func để chạy tt
            
-      getCourses((data)=>{
+      getCourses((db)=>{
+                  let data = db.songs
                   let count = 0
                   let lengthData = data.length
 
