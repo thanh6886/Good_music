@@ -81,8 +81,9 @@ function render(data) {
   });
   playlist.innerHTML = HTML.join(""); // gắn nhúng vào HTML
 }
-function loadSong(data, count) {
-  // load ra bài hát muốn chạy data chuyền vào là 1 mảng
+function loadSong(data) {
+  const a = localStorage.getItem("count");
+  const count = a === null ? 0 : a;
   const currentsong = data[count];
   audio.src = currentsong.path;
   heading.innerText = currentsong.name;
@@ -107,10 +108,10 @@ function pauseSound() {
   nowPlaying.innerText = "NOW PLAYING ?";
   playBtn.innerHTML = '<i class="fa fa-play-circle fa-3x"></i>';
 }
-
 repeatBtn.onclick = function () {
   // sự kiện khi bấm nút repeat
   isRepeatBtn = !isRepeatBtn;
+  console.log(isRepeatBtn);
   if (isRepeatBtn == false) {
     repeatBtn.innerHTML = '<i class="fas fa-redo fa-2x"></i>';
   } else {
@@ -121,7 +122,9 @@ repeatBtn.onclick = function () {
 
 randomBtn.onclick = function () {
   // sự kiện khi bấm  nút random
+
   isRandom = !isRandom;
+  console.log(isRandom);
   if (isRandom == false) {
     randomBtn.innerHTML = '<i class="fas fa-random fa-2x"></i>';
   } else {
@@ -129,11 +132,6 @@ randomBtn.onclick = function () {
       '<i class="fas fa-random fa-2x" style="color: brown;"></i>';
   }
 };
-function getRandom(data) {
-  // random song
-  let randomIndex = Math.floor(Math.random() * lengthData);
-  return randomIndex;
-}
 
 _volume.addEventListener("input", (e) => {
   // sự kiện chỉnh thanh âm thanh
@@ -179,13 +177,13 @@ function appRun() {
   // func để chạy tt
 
   getCourses((db) => {
-    console.log(db);
+    // console.log(db);
     let data = db.songs;
     let count = 0;
     let lengthData = data.length;
 
     render(data); // lấy ra danh sách các bài hát và gắn vào HTML
-    loadSong(data, count); // lấy ra bài hát muốn chạy
+    loadSong(data); // lấy ra bài hát muốn chạy
 
     nextBtn.onclick = function nextClick() {
       // chuyển bài tiếp
@@ -194,7 +192,8 @@ function appRun() {
       } else {
         count = 0;
       }
-      loadSong(data, count);
+      localStorage.setItem("count", count);
+      loadSong(data);
       playSound();
       cdRun();
     };
@@ -205,7 +204,8 @@ function appRun() {
       } else {
         count = lengthData - 1;
       }
-      loadSong(data, count);
+      localStorage.setItem("count", count);
+      loadSong(data);
       playSound();
       cdRun();
     };
@@ -217,20 +217,28 @@ function appRun() {
           count = Number(songNode.dataset.index); // lấy index gán vào count
           //      console.log(songNode)
           //      console.log(count)
-          loadSong(data, count);
+          localStorage.setItem("count", count);
+          loadSong(data);
           playSound();
           cdRun();
         }
       }
     };
+    let randomCount = Math.floor(Math.random() * lengthData);
     audio.addEventListener("ended", function () {
       // bắt sự kiện bài hát khi hết
-      if (isRepeatBtn === true && isRandom === false) {
+      if (isRepeatBtn == true && isRandom == false) {
         // khi nút repeat bật random tắt
         audio.play();
-      } else if (isRepeatBtn === false && isRandom === true) {
+      }
+      if (isRandom === true && isRepeatBtn == false) {
         //  bật random tắt repeat
-      } else if (isRepeatBtn === false && isRandom === false) {
+
+        localStorage.setItem("count", randomCount);
+        loadSong(data);
+        playSound();
+        cdRun();
+      } else {
         // bật hoặc tắt cả 2 lỗi  :)
         nextBtn.click();
       }
